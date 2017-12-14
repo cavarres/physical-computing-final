@@ -6,7 +6,7 @@
 
 *Size:* 53.34 cm × 53.34 cm (21 in × 21 in)
 
-*Medium* Balsa Wood
+*Medium:* Birch Wood
 
 ## Project: Watching
 
@@ -20,7 +20,7 @@ This birch wood clock that runs on a Raspberry Pi is meant to disorient the audi
 
 The piece is a 53.34 in diameter clock made out of birch wood. The clock movement mechanism was inspired by the [Starchar Clock](http://thewoodenclock.com/downloads/starchar-clock-plans/) designed by Colin Sprinkle. The mechanism was built following the instructions provided by Sprinkle. The clock is equipped with an hour, minute and second hand which all move thanks to the wood mechanism designed by Sprinkle. The clock moves thanks to a [continuous rotation servo motor](https://www.adafruit.com/product/154) wich is hooked to a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/). 
 
-The clock has a non traditional face that displays roman numerals that increase counterclockwise ![Clock Face][images/Clock Face.jpg]. As is used in many clocks for [multiple reasons](http://mentalfloss.com/article/24578/why-do-some-clocks-use-roman-numeral-iiii), the clock uses IIII instead of IV to represent 4. 
+The clock has a non traditional face that displays roman numerals that increase counterclockwise ![Clock Face](images/Clock Face.jpg). As is used in many clocks for [multiple reasons](http://mentalfloss.com/article/24578/why-do-some-clocks-use-roman-numeral-iiii), the clock uses IIII instead of IV to represent 4. 
 
 Embedded in the clock face is a a small [Raspberry Pi Camera Module](https://www.raspberrypi.org/products/camera-module-v2/) that is used to recognize faces as a proxy for detecting if there is someone looking at the clock.
 
@@ -60,7 +60,7 @@ But in the end, the number of likes we get is only a proxy for how beautiful we 
 
 *Time*
 
-	*“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.”* ― Michael Ende, Momo
+>“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.”* ― Michael Ende, Momo
 
 Momo is a fiction novel by Michael Ende. One day, to the city where Momo lives arrive the Grey Men who present themselves as agents of the Timsavings Bank. They claim that time can be deposited to the bank and be later retrieve it. Yet, the more time people save, the less they have; the time put in the bank is lost forever. 
 
@@ -69,7 +69,7 @@ In the project I wanted to challenge the way we operationalize concepts and how 
 
 *Abstract Concepts and the Arbitariness of their Representations* 
 
-	*"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it."* - Michael Ende, Momo
+>"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it."* - Michael Ende, Momo
 
 
 What problem is it responding to?  What issue is it engaging?   
@@ -109,13 +109,10 @@ You should link to your full code, either included in the repository (e.g. [my_c
 
 This project was an amazing experience for many reasons. Skill-wise, I learned how to use the CNC, how to use the laser cutters, how to saw, drill, clamp, glue etc. I learned how to use the Raspberry Pi, how to use a continuous servo (although some parts of this are still unclear), and how to use OpenCV to detect faces. I started exploring multiprocessign in Python (although some parts of this are still unclear). 
 
-	*“...it's like this. Sometimes, when you've a very long street ahead of you, you think how terribly long it is and feel sure you'll never get it swept. And then you start to hurry. You work faster and faster and every time you look up there seems to be just as much left to sweep as before, and you try even harder, and you panic, and in the end you're out of breath and have to stop--and still the street stretches away in front of you. That's not the way to do it.
-
-	You must never think of the whole street at once, understand? You must only concentrate on the next step, the next breath, the next stroke of the broom, and the next, and the next. Nothing else.
-
-	That way you enjoy your work, which is important, because then you make a good job of it. And that's how it ought to be.
-
-	And all at once, before you know it, you find you've swept the whole street clean, bit by bit. what's more, you aren't out of breath. That's important, too...”* -Michael Ende, Momo
+>“...it's like this. Sometimes, when you've a very long street ahead of you, you think how terribly long it is and feel sure you'll never get it swept. And then you start to hurry. You work faster and faster and every time you look up there seems to be just as much left to sweep as before, and you try even harder, and you panic, and in the end you're out of breath and have to stop--and still the street stretches away in front of you. That's not the way to do it.
+>You must never think of the whole street at once, understand? You must only concentrate on the next step, the next breath, the next stroke of the broom, and the next, and the next. Nothing else.
+>That way you enjoy your work, which is important, because then you make a good job of it. And that's how it ought to be.
+>And all at once, before you know it, you find you've swept the whole street clean, bit by bit. what's more, you aren't out of breath. That's important, too...”  -Michael Ende, Momo
 
 But this project was also about the process, the process of learning, the patience, recovering from mistakes, and ultimately, dedicating the necessary time. 
 
