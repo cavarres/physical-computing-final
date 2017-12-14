@@ -33,9 +33,9 @@ def findFace(q):
 
 	# initialize the camera and grab a reference to the raw camera capture
 	camera = PiCamera()
-	camera.resolution = (160, 128)
-	camera.framerate = 30
-	rawCapture = PiRGBArray(camera, size=(160, 128))
+	camera.resolution = (160, 120)
+	camera.framerate = 2
+	rawCapture = PiRGBArray(camera, size=(160, 120))
 
 	# allow the camera to warmup
 	time.sleep(0.1)
@@ -43,7 +43,6 @@ def findFace(q):
 
 	# capture frames from the camera
 	for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-	    print "beginning of camera loop", q
 	        # grab the raw NumPy array representing the image, then initialize the timestamp
 	        # and occupied/unoccupied text
 	    image = frame.array
@@ -58,49 +57,53 @@ def findFace(q):
 	    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 	    )
 	    number_faces = len(faces)
-
 	    print time.time()*1000.0-lastTime," Found {0} faces!".format(len(faces))
 	    lastTime = time.time()*1000.0
-
+	    if q != number_faces:
+		    q.put_nowait(number_faces)
 	    #cv2.imshow("Frame", image)
-	    #key = cv2.waitKey(1) & 0xFF
+	    key = cv2.waitKey(1) & 0xFF
 
 	    # clear the stream in preparation for the next frame
 	    rawCapture.truncate(0)
 
-	    # if the `q` key was pressed, break from the loop
+	        # if the `q` key was pressed, break from the loop
 	    if key == ord("x"):
 	        break
 
 def clockMoving(q):
      n_lost = 0
      while True:
-        if q.empty() is not False:
-        	wiringpi.pwmWrite(18, 5)
-        	time.sleep(0.27)
+         #For Debugging
+        #if q.empty() is not False:
+        	#wiringpi.pwmWrite(18, 5)
+        	#time.sleep(0.27)
+        	#wiringpi.pwmWrite(18, 0)
+        	#time.sleep(0.73)
+        	#print q.get()
+    	#else:
+		the_value = q.get()
+		if the_value == 0:
+            #move servo counterclockwise fast to recover seconds lost
+            wiringpi.pwmWrite(18, 149)
+        	time.sleep(0.14*(n_lost*2)/(1-0.14))
+            #move servo counterclockwise
+            wiringpi.pwmWrite(18, 149)
+        	time.sleep(0.14)
         	wiringpi.pwmWrite(18, 0)
-        	time.sleep(0.73)
-        	print q.get()
-    	else:
-    		the_value = q.get()
-    		if the_value > 0:
-	        	wiringpi.pwmWrite(18, 149)
-	        	time.sleep(0.14*(n_lost*2)/(1-0.14))
-	        	wiringpi.pwmWrite(18, 149)
-	        	time.sleep(0.14)
-	        	wiringpi.pwmWrite(18, 0)
-	        	time.sleep(0.86)
-	        	print "n lost =", n_lost
-	        	print the_value
-	        	n_lost = 0
-	        else:
-	        	wiringpi.pwmWrite(18, 146)
-	        	time.sleep(0.32)
-	        	wiringpi.pwmWrite(18, 0)
-	        	time.sleep(0.68)
-	        	print "n lost =", n_lost
-	        	print the_value
-	        	n_lost += 1
+        	time.sleep(0.86)
+        	print the_value
+            #reset value of seconds lost
+        	n_lost = 0
+        else:
+            #move servo clockwise
+            wiringpi.pwmWrite(18, 146)
+        	time.sleep(0.32)
+        	wiringpi.pwmWrite(18, 0)
+        	time.sleep(0.68)
+        	print "n lost =", n_lost
+        	print the_value
+        	n_lost += 1 #keep track of seconds lost
 
 
 if __name__ == "__main__":

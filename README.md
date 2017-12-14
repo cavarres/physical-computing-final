@@ -94,8 +94,54 @@ The code should be simple: two processes are running at the same time.
 1. Runs the camera
 2. Runs the servo
 
-The process that runs the camera captures images and does facial recognition. If it finds a face, it saves that information in a global variable to which the other process has access.
-The process that runs the servo does the following: if 0 faces move counterclockwise, if >0 faces, move clockwise.
+The process that runs the camera (`findFace`) captures images and does facial recognition.
+
+```Python
+faces = face_cascade.detectMultiScale(
+ gray,
+ scaleFactor=1.1,
+ minNeighbors=5,
+ minSize=(30, 30),
+ flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+ )
+```
+
+If it finds a face, it saves that information in a global variable to which the other process has access. More specifically, if the number of faces detected is different from the number of faces in the Queue (difined as `q`), the `number_faces` will be put in the Queue.
+
+```Python
+if q != number_faces:
+    q.put_nowait(number_faces)
+```
+
+Simultaneously, the process that runs the servo (`clockMoving`) gets the value form the Queue `the_value = q.get()` and if it is 0 (no one is looking at the clock) it moves the servo clockwise.
+
+Through trial and testing I arrived at the values that make the servo move the right distance for each step. To move the servo clockwise. 146 for 0.32 seconds and a 0.68s pause moves the servo clockwise.
+
+```Python
+#move servo clockwise
+wiringpi.pwmWrite(18, 146)
+time.sleep(0.32)
+wiringpi.pwmWrite(18, 0)
+time.sleep(0.68)
+```
+
+To move the servo counterclockwise, 149 for 0.14 seconds and a 0.86s pause.
+
+```Python
+#move servo counterclockwise
+wiringpi.pwmWrite(18, 149)
+time.sleep(0.14)
+wiringpi.pwmWrite(18, 0)
+time.sleep(0.86)
+```
+
+Finally, the clock must recover the time it 'loses' while people are looking at it. For this, the number of seconds lost is stored in `n_lost`. Before the clock moves 1 step per second when `number_faces == 0`, it moves full speed counterclockwise for the time necessary to recover the distance lost in the `n_lost` time and the distance lost during the recovering time. I got the values by solving a system of equations. 
+
+```Python
+#move servo counterclockwise fast to recover seconds lost
+wiringpi.pwmWrite(18, 149)
+time.sleep(0.14*(n_lost*2)/(1-0.14))
+```
 
 
 ### Design / Form
@@ -120,7 +166,7 @@ This project was an amazing experience for many reasons. Skill-wise, I learned h
 There are specific things that I would have done differently:
 * I would have bought the [servo to shaft coupler](https://www.servocity.com/25-tooth-spline-servo-to-shaft-couplers) in time in order to have less struggles with the servo rotation.
 * I would have cut a longer 5/32 tube for the minute hand (it keeps loosening and rotating with the seconds and not the minutes tube)
-* I would have spent more time understanding multiprocessing.
+* I would have spent more time understanding multiprocessing and writing polished code
 * I would have dedicated more time to making sure I could exhibit the clock in the mirror space where I intended it to be.
 * I would love to explore different materials like metal or acrylic.
 * I would have liked to pay more attention to the precision of the clock. I would like to access the [time.gov](http://www.time.gov) time data and play with the concept of time being imposed and decided externally to the clock.
