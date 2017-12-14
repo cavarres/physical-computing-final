@@ -101,19 +101,27 @@ You should link to your full code, either included in the repository (e.g. [my_c
 
 ### Design / Form
 
-< Explain the device's form, the aesthetic choices made and how they relate to the concept/function the device is intended to engage >
+Some design choices worth highlighting: 
 
-< include photos of your device >
+* Using roman numerals was a design choice that reflected both the nostalgic theme around analogue clocks but also a thoughful decision made thinking about the symmetry of roman numerals and how they would be reflected in the mirror. 
+* Using IIII instead of IV was an attempt to follow clock traditions. 
+* The decision to hide the gears and present a clean design was meant to keep attention on the main concept (the direction and position of the hands). Yet, I acknowledge that hiding the gears hides the very mechanism that materializes time in the first place. 
 
 ### Evaluation / Reflection
 
-This project was an amazing experience for many reasons. Skill-wise, I learned how to use the CNC, how to use the laser cutters, how to saw, drill, clamp, glue etc. I learned how to use the Raspberry Pi, how to use a continuous servo (although some parts of this are still unclear), and how to use OpenCV to detect faces. I started exploring multiprocessign in Python (although some parts of this are still unclear). 
+This project was an amazing experience for many reasons. Skill-wise, I learned how to use the CNC and the laser cutters. I got to learn and practice how to saw, drill, clamp, glue, sand etc. I learned how to use the Raspberry Pi, how to program a continuous servo (although some parts of this are still unclear) and how to to work with OpenCV to detect faces. I also started exploring multiprocessing in Python (although some parts of this are still unclear). I learned a lot about  gears and gear reductions. I also satisfied a long-held curiosity about how clocks work. Paralleling my piece's conceptual framework, I got to explore, first hand, the mechanism that for centuries has materialized the concept of time. 
 
->“...it's like this. Sometimes, when you've a very long street ahead of you, you think how terribly long it is and feel sure you'll never get it swept. And then you start to hurry. You work faster and faster and every time you look up there seems to be just as much left to sweep as before, and you try even harder, and you panic, and in the end you're out of breath and have to stop--and still the street stretches away in front of you. That's not the way to do it.
->You must never think of the whole street at once, understand? You must only concentrate on the next step, the next breath, the next stroke of the broom, and the next, and the next. Nothing else.
->That way you enjoy your work, which is important, because then you make a good job of it. And that's how it ought to be.
->And all at once, before you know it, you find you've swept the whole street clean, bit by bit. what's more, you aren't out of breath. That's important, too...”  -Michael Ende, Momo
+Yet, the *process* was the most significant part of this project. Learning required repeated failures and thus it exacted patience, courage and deligence. Building this clock demanded all of my *time* and in the construction process I lost track of it. Again, in parallel to my conceptual framework, the project challenged me to think about time and to spend my time intentionally. Like Beppo, the silent street-cleaner from Momo said:  
 
-But this project was also about the process, the process of learning, the patience, recovering from mistakes, and ultimately, dedicating the necessary time. 
+>“Sometimes, when you've a very long street ahead of you, you think how terribly long it is and feel sure you'll never get it swept. And then you start to hurry. You work faster and faster and every time you look up there seems to be just as much left to sweep as before, and you try even harder, and you panic, and in the end you're out of breath and have to stop--and still the street stretches away in front of you. That's not the way to do it.
 
-< What is your own evaluation of your project?   What did you learn through this project?  What would you do differently in the future? >
+>You must never think of the whole street at once, understand? You must only concentrate on the next step, the next breath, the next stroke of the broom, and the next, and the next. Nothing else.That way you enjoy your work, which is important, because then you make a good job of it. And that's how it ought to be.And all at once, before you know it, you find you've swept the whole street clean, bit by bit. what's more, you aren't out of breath. That's important, too...”  -Michael Ende, Momo
+
+
+There are specific things that I would have done differently: 
+* I would have bought the [servo to shaft coupler](https://www.servocity.com/25-tooth-spline-servo-to-shaft-couplers) in time in order to have less struggles with the servo rotation. 
+* I would have cut a longer 5/32 tube for the minute hand (it keeps loosening and rotating with the seconds and not the minutes tube)
+* I would have spent more time understanding multiprocessing. 
+* I would have dedicated more time to making sure I could exhibit the clock in the mirror space where I intended it to be. 
+* I would love to explore different materials like metal or acrylic. 
+* I would have liked to pay more attention to the precision of the clock. I would like to access the [time.goc](http://www.time.gov) time data and play with the concept of time being imposed and decided externally to the clock. 
