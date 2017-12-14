@@ -38,14 +38,49 @@ When the person turns around again to re-inspect the mirror (this should / could
 ![Space Diagram 2](images/SpaceDiagram2.JPG)
 
 #### Why
-Explain the "why" of your project:  What problem is it responding to?  What issue is it engaging?   
+
+*The Clock*
+
+For a very long time clocks have fascinated me. When I was in elementary school I once pulled my kitchen's clock apart to use the mechanism for an art project. The choice to build an analogue, wooden clock with was motivated partly by nostalgia and an acknowledgement that times are changing and what used to be a clear representation of time may no longer be so as digital clocks replace analogue ones. 
+
+*Disorientation*
+
+*Time and the Operationalization of Constructs*
+
+One of the prime characteristics of the information age is our increased capacity to measure and quantify phenomena. We are now able to gather data about almost anything imaginable: from the steps we take to the food we eat, from how long you've been driving to how many friends you have.
+
+Reality mining was introduced by Alex Pentland in the paper [*Reality Mining: Sensing Complex Social Systems*](http://realitycommons.media.mit.edu/pdfs/realitymining.pdf) The authors' goal was to demonstrate "the ability to use standard Bluetooth-enabled mobile telephones to measure information access and use in different contexts, recognize social patterns in daily user activity, infer relationships, identify socially significant
+locations, and model organizational rhythms." Reality mining is at the core of our times, we want to measure, quantify and decide. 
+
+If you pair reality mining with solutionism, The belief that all difficulties have benign solutions, often of a technocratic nature. 
+
+
+But in the end, the number of likes we get is only a proxy for how beautiful we are, the number of friends on facebook is only a proxy for how many friends we have, the steps displayed on our fitbits are only a proxy for how active we were (arguable, it's a proxy for steps as well). A central piece of the Reality Mining puzzle, one that people often forget, is the step where we operationalize our constructs, when we simultaneously decide what the essence of our construct is and what the best way to quantify it is. Then, we make the assumption that our definition is accurate and blend the two to the extent where the boundaries between the two tend to disappear, we forget that likes are not friendships and that clock tickings are not time. 
+
+In the project I wanted to challenge the way we oper
+
+
+
+
+“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.” ― Michael Ende, Momo
+
+Momo is a fiction novel by Michael Ende. One day, to the city where Momo lives arrive the Grey Men who present themselves as agents of the Timsavings Bank. They claim that time can be deposited to the bank and be later retrieve it. Yet, the more time people save, the less they have; the time put in the bank is lost forever. 
+
+
+
+
+*Abstract Concepts and the Arbitariness of their Representations* 
+"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it." - Michael Ende, Momo
+
+
+What problem is it responding to?  What issue is it engaging?   
   
 
 ### Technical Description
 
 < Explain the "how" of your project.  What are the hardware components?  What are the software components?  How do they interact with each other? >
 
-< You can also explain the development process here >
+![Process Video](images/ProcessVideo.mp4)
 
 
 #### Hardware Wiring Diagram
