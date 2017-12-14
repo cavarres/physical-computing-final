@@ -1,8 +1,11 @@
 # Final Project - Physical Computing and the Internet of Things
 
 *Name:*  Camila Vargas Restrepo
+
 *Date:* December 14. 2017
+
 *Size:* 53.34 cm × 53.34 cm (21 in × 21 in)
+
 *Medium* Balsa Wood
 
 ## Project: Watching
@@ -12,7 +15,7 @@ This installation is meant to disorient the audience around the concept of time.
 
 ### Detailed Project Description
 
-#### What?
+#### WHAT
 
 **The Clock**
 
@@ -37,7 +40,7 @@ When the person turns around again to re-inspect the mirror (this should / could
 
 ![Space Diagram 2](images/SpaceDiagram2.JPG)
 
-#### Why
+#### WHY
 
 *The Clock*
 
@@ -80,7 +83,8 @@ What problem is it responding to?  What issue is it engaging?
 
 < Explain the "how" of your project.  What are the hardware components?  What are the software components?  How do they interact with each other? >
 
-![Process Video](images/ProcessVideo.mp4)
+
+[![Process Video](https://img.youtube.com/vi/ZWfhtFWAcsg/0.jpg)](https://www.youtube.com/watch?v=ZWfhtFWAcsg)
 
 
 #### Hardware Wiring Diagram
