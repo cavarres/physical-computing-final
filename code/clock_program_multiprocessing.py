@@ -61,14 +61,14 @@ def findFace(q):
 
 	    print time.time()*1000.0-lastTime," Found {0} faces!".format(len(faces))
 	    lastTime = time.time()*1000.0
-	    
+
 	    #cv2.imshow("Frame", image)
-	    key = cv2.waitKey(1) & 0xFF
+	    #key = cv2.waitKey(1) & 0xFF
 
 	    # clear the stream in preparation for the next frame
 	    rawCapture.truncate(0)
 
-	        # if the `q` key was pressed, break from the loop
+	    # if the `q` key was pressed, break from the loop
 	    if key == ord("x"):
 	        break
 
