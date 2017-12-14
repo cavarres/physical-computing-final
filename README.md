@@ -10,8 +10,7 @@
 
 ## Project: Watching
 
-This installation is meant to disorient the audience around the concept of time. 
-< 2 - 3 sentence brief description / abstract of your project>
+This birch wood clock that runs on a Raspberry Pi is meant to disorient the audience and make them question the concept of time. It's meant to challenge what the clock represents and how it does so. 
 
 ### Detailed Project Description
 
@@ -19,7 +18,7 @@ This installation is meant to disorient the audience around the concept of time.
 
 **The Clock**
 
-The piece is a 53.34in diameter clock made out of birch wood. The clock movement mechanism was inspired by the [Starchar Clock](http://thewoodenclock.com/downloads/starchar-clock-plans/) designed by Colin Sprinkle. The mechanism was built following the instructions provided by Sprinkle. The clock is equipped with an hour, minute and second hand which all move thanks to the wood mechanism designed by Sprinkle. The clock moves thanks to a [continuous rotation servo motor](https://www.adafruit.com/product/154) wich is hooked to a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/). 
+The piece is a 53.34 in diameter clock made out of birch wood. The clock movement mechanism was inspired by the [Starchar Clock](http://thewoodenclock.com/downloads/starchar-clock-plans/) designed by Colin Sprinkle. The mechanism was built following the instructions provided by Sprinkle. The clock is equipped with an hour, minute and second hand which all move thanks to the wood mechanism designed by Sprinkle. The clock moves thanks to a [continuous rotation servo motor](https://www.adafruit.com/product/154) wich is hooked to a [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/). 
 
 The clock has a non traditional face that displays roman numerals that increase counterclockwise ![Clock Face][images/Clock Face.jpg]. As is used in many clocks for [multiple reasons](http://mentalfloss.com/article/24578/why-do-some-clocks-use-roman-numeral-iiii), the clock uses IIII instead of IV to represent 4. 
 
@@ -46,9 +45,7 @@ When the person turns around again to re-inspect the mirror (this should / could
 
 For a very long time clocks have fascinated me. When I was in elementary school I once pulled my kitchen's clock apart to use the mechanism for an art project. The choice to build an analogue, wooden clock with was motivated partly by nostalgia and an acknowledgement that times are changing and what used to be a clear representation of time may no longer be so as digital clocks replace analogue ones. 
 
-*Disorientation*
-
-*Time and the Operationalization of Constructs*
+*The Operationalization of Constructs*
 
 One of the prime characteristics of the information age is our increased capacity to measure and quantify phenomena. We are now able to gather data about almost anything imaginable: from the steps we take to the food we eat, from how long you've been driving to how many friends you have.
 
@@ -60,39 +57,39 @@ If you pair reality mining with solutionism, The belief that all difficulties ha
 
 But in the end, the number of likes we get is only a proxy for how beautiful we are, the number of friends on facebook is only a proxy for how many friends we have, the steps displayed on our fitbits are only a proxy for how active we were (arguable, it's a proxy for steps as well). A central piece of the Reality Mining puzzle, one that people often forget, is the step where we operationalize our constructs, when we simultaneously decide what the essence of our construct is and what the best way to quantify it is. Then, we make the assumption that our definition is accurate and blend the two to the extent where the boundaries between the two tend to disappear, we forget that likes are not friendships and that clock tickings are not time. 
 
-In the project I wanted to challenge the way we oper
 
+*Time*
 
-
-
-“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.” ― Michael Ende, Momo
+	*“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.”* ― Michael Ende, Momo
 
 Momo is a fiction novel by Michael Ende. One day, to the city where Momo lives arrive the Grey Men who present themselves as agents of the Timsavings Bank. They claim that time can be deposited to the bank and be later retrieve it. Yet, the more time people save, the less they have; the time put in the bank is lost forever. 
 
-
+In the project I wanted to challenge the way we operationalize concepts and how naturalized it's representaiton can become. The orientation of the clock's hands have become something so common, so natural (although arguable we are at the end of an era in that sense) that clocks have effaced numbers from their dials. By flipping the face around, my intention was to create a sense of disorientation and make people think hard about the representation of time. 
 
 
 *Abstract Concepts and the Arbitariness of their Representations* 
-"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it." - Michael Ende, Momo
+
+	*"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it."* - Michael Ende, Momo
 
 
 What problem is it responding to?  What issue is it engaging?   
   
 
-### Technical Description
+### Hardware 
 
-< Explain the "how" of your project.  What are the hardware components?  What are the software components?  How do they interact with each other? >
+* [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/). 
+* [continuous rotation servo motor](https://www.adafruit.com/product/154)
+* [Raspberry Pi Camera Module](https://www.raspberrypi.org/products/camera-module-v2/)
+* [Portable Power Stick](https://getonhand.com/collections/portable-power/products/new-stick-black)
 
+*Hardware Wiring Diagram*
+![Wiring Diagram](images/WiringDiagram.png)
 
+This short video illustrates how the clock was put together
 [![Process Video](https://img.youtube.com/vi/ZWfhtFWAcsg/0.jpg)](https://www.youtube.com/watch?v=ZWfhtFWAcsg)
 
 
-#### Hardware Wiring Diagram
-
-![Wiring Diagram](images/WiringDiagram.png)
-< Insert Picture and explanation of Your Wiring Diagram here >
-
-#### Code
+#### Software
 
 < Explain your code.  You might include code snippets, either `inline` or
 ```c++
@@ -109,5 +106,17 @@ You should link to your full code, either included in the repository (e.g. [my_c
 < include photos of your device >
 
 ### Evaluation / Reflection
+
+This project was an amazing experience for many reasons. Skill-wise, I learned how to use the CNC, how to use the laser cutters, how to saw, drill, clamp, glue etc. I learned how to use the Raspberry Pi, how to use a continuous servo (although some parts of this are still unclear), and how to use OpenCV to detect faces. I started exploring multiprocessign in Python (although some parts of this are still unclear). 
+
+	*“...it's like this. Sometimes, when you've a very long street ahead of you, you think how terribly long it is and feel sure you'll never get it swept. And then you start to hurry. You work faster and faster and every time you look up there seems to be just as much left to sweep as before, and you try even harder, and you panic, and in the end you're out of breath and have to stop--and still the street stretches away in front of you. That's not the way to do it.
+
+	You must never think of the whole street at once, understand? You must only concentrate on the next step, the next breath, the next stroke of the broom, and the next, and the next. Nothing else.
+
+	That way you enjoy your work, which is important, because then you make a good job of it. And that's how it ought to be.
+
+	And all at once, before you know it, you find you've swept the whole street clean, bit by bit. what's more, you aren't out of breath. That's important, too...”* -Michael Ende, Momo
+
+But this project was also about the process, the process of learning, the patience, recovering from mistakes, and ultimately, dedicating the necessary time. 
 
 < What is your own evaluation of your project?   What did you learn through this project?  What would you do differently in the future? >
