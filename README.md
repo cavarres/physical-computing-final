@@ -56,9 +56,6 @@ Today, reality mining is not novel or a far fetched idea. Instead, it is somethi
 
 Often, however, we forget that this step existed in our minds or in someone elses. The essence, the definition, and the operationalized measurement get blended together. The boundaries between these seem to disappear and we forget that likes are not friendships and that clock tickings are not time. 
 
-When we intentionally decide to quantify concepts and constructs, problems start to arise (e.g. [Automation will drastically change work for the 3.5 million truck drivers in the US.](https://www.facebook.com/Vox/videos/795007590686845/?hc_ref=ARTqg73Skvaz_kxYhGfe_z2_ltIIbZ2J6nyKpyr_rMRxhBqB9qwalpE0eywuP4U0-EU&pnref=story). This is not meant to say that we shouldn't operationalize, measure or quantify, but instead that the decisions we make in the process of doing so are probably at the core of the problems that arise. 
-
-
 *Time*
 
 >“People never seemed to notice that, by saving time, they were losing something else. No one cared to admit that life was becoming ever poorer, bleaker and more monotonous. The ones who felt this most keenly were the children, because no one had time for them any more. But time is life itself, and life resides in the human heart. And the more people saved, the less they had.”* ― Michael Ende, Momo
@@ -71,7 +68,7 @@ In the project I wanted to challenge the way we operationalize concepts and how 
 I think there are several ways to read what the alternating clock mechanism represents. But one of them is that it represents some of the problems around of quantifying time. People in the space will always see the clock's hands moving clockwise, yet what the clock appears to tell you is not what it is telling you. The clock represents time and the mirror represents the representation of time. Time moves forward only because we represent it a certain way. In the clock, looking at the mirror and not the clock is what makes it move counterclockwise (forward). When the audience looks at the clock directly, they may think they are looking at the same concept (since the camera detects the person, clock hands start moving clockwise and they appear the same as in the reflection), but they are not. Now, time is moving backwards. Looking at the concept itself makes it come apart. 
 
 >"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it."* - Michael Ende, Momo
-  
+
 
 ### Hardware 
 
