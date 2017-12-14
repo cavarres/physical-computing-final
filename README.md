@@ -43,19 +43,20 @@ When the person turns around again to re-inspect the mirror (this should / could
 
 *The Clock*
 
-For a very long time clocks have fascinated me. When I was in elementary school I once pulled my kitchen's clock apart to use the mechanism for an art project. The choice to build an analogue, wooden clock with was motivated partly by nostalgia and an acknowledgement that times are changing and what used to be a clear representation of time may no longer be so as digital clocks replace analogue ones. 
+For a very long time clocks have fascinated me. In elementary school, I once pulled my kitchen's clock apart to use the mechanism for an art project. The choice to build an analogue, wooden clock was partly motivated by nostalgia and the realization that times are changing: what used to be a clear representation of time may no longer be so as digital clocks replace analogue ones. 
 
 *The Operationalization of Constructs*
 
-One of the prime characteristics of the information age is our increased capacity to measure and quantify phenomena. We are now able to gather data about almost anything imaginable: from the steps we take to the food we eat, from how long you've been driving to how many friends you have.
+One of the defining characteristics of the information age is our increased capacity to measure and quantify phenomena. We are now able to gather data about almost anything imaginable: from the steps we take to the food we eat, from how long we drive to how many friends you have.
 
-Reality mining was introduced by Alex Pentland in the paper [*Reality Mining: Sensing Complex Social Systems*](http://realitycommons.media.mit.edu/pdfs/realitymining.pdf) The authors' goal was to demonstrate "the ability to use standard Bluetooth-enabled mobile telephones to measure information access and use in different contexts, recognize social patterns in daily user activity, infer relationships, identify socially significant
-locations, and model organizational rhythms." Reality mining is at the core of our times, we want to measure, quantify and decide. 
+Reality mining was introduced 10 years ago by Alex Pentland in the paper [*Reality Mining: Sensing Complex Social Systems*](http://realitycommons.media.mit.edu/pdfs/realitymining.pdf) The authors' goal was to demonstrate 
+>"the ability to use standard Bluetooth-enabled mobile telephones to measure information access and use in different contexts, recognize social patterns in daily user activity, infer relationships, identify socially significant locations, and model organizational rhythms." 
 
-If you pair reality mining with solutionism, The belief that all difficulties have benign solutions, often of a technocratic nature. 
+Today, reality mining is not novel or a far fetched idea. Instead, it is something we, as a society, take for granted and seek to exploit. We  are eager to measure and quantify; we crave information and in some scenarios are unnaturally parallized if we don't have data to decide. However, in the end, the number of likes we get is only a proxy for how amiable we are, the number of followers we have on Instagram is only a proxy for how many real friends we have, the steps displayed on our Fitbits are only a proxy for how active we have been (arguably, it's even a proxy for [steps](https://help.fitbit.com/articles/en_US/Help_article/1143)). A central piece of the reality mining puzzle, one that people often forget, is one where we operationalize constructs. Here we simultaneously decide what is the essence of our construct and what the best way to quantify it is. 
 
+Often, however, we forget that this step existed in our minds or in someone elses. The essence, the definition, and the operationalized measurement get blended together. The boundaries between these seem to disappear and we forget that likes are not friendships and that clock tickings are not time. 
 
-But in the end, the number of likes we get is only a proxy for how beautiful we are, the number of friends on facebook is only a proxy for how many friends we have, the steps displayed on our fitbits are only a proxy for how active we were (arguable, it's a proxy for steps as well). A central piece of the Reality Mining puzzle, one that people often forget, is the step where we operationalize our constructs, when we simultaneously decide what the essence of our construct is and what the best way to quantify it is. Then, we make the assumption that our definition is accurate and blend the two to the extent where the boundaries between the two tend to disappear, we forget that likes are not friendships and that clock tickings are not time. 
+When we intentionally decide to quantify concepts and constructs, problems start to arise (e.g. [Automation will drastically change work for the 3.5 million truck drivers in the US.](https://www.facebook.com/Vox/videos/795007590686845/?hc_ref=ARTqg73Skvaz_kxYhGfe_z2_ltIIbZ2J6nyKpyr_rMRxhBqB9qwalpE0eywuP4U0-EU&pnref=story). This is not meant to say that we shouldn't operationalize, measure or quantify, but instead that the decisions we make in the process of doing so are probably at the core of the problems that arise. 
 
 
 *Time*
@@ -64,15 +65,12 @@ But in the end, the number of likes we get is only a proxy for how beautiful we 
 
 Momo is a fiction novel by Michael Ende. One day, to the city where Momo lives arrive the Grey Men who present themselves as agents of the Timsavings Bank. They claim that time can be deposited to the bank and be later retrieve it. Yet, the more time people save, the less they have; the time put in the bank is lost forever. 
 
-In the project I wanted to challenge the way we operationalize concepts and how naturalized it's representaiton can become. The orientation of the clock's hands have become something so common, so natural (although arguable we are at the end of an era in that sense) that clocks have effaced numbers from their dials. By flipping the face around, my intention was to create a sense of disorientation and make people think hard about the representation of time. 
 
+In the project I wanted to challenge the way we operationalize concepts and how naturalized their representaitons can become. The orientation of the clock's hands have become something so common, so natural (although arguable we are at the end of an era in that sense) that clocks have effaced numbers from their dials. By flipping the face around, my intention was to create a sense of disorientation and make people think hard about the representation of time. 
 
-*Abstract Concepts and the Arbitariness of their Representations* 
+I think there are several ways to read what the alternating clock mechanism represents. But one of them is that it represents some of the problems around of quantifying time. People in the space will always see the clock's hands moving clockwise, yet what the clock appears to tell you is not what it is telling you. The clock represents time and the mirror represents the representation of time. Time moves forward only because we represent it a certain way. In the clock, looking at the mirror and not the clock is what makes it move counterclockwise (forward). When the audience looks at the clock directly, they may think they are looking at the same concept (since the camera detects the person, clock hands start moving clockwise and they appear the same as in the reflection), but they are not. Now, time is moving backwards. Looking at the concept itself makes it come apart. 
 
 >"Calendars and clocks exist to measure time, but that signifies little because we all know that an hour can seem as eternity or pass in a flash, according to how we spend it."* - Michael Ende, Momo
-
-
-What problem is it responding to?  What issue is it engaging?   
   
 
 ### Hardware 
