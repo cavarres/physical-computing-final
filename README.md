@@ -88,7 +88,7 @@ This short video illustrates how the clock was put together
 
 #### Software
 
-**Code:** [Python code](code/clock_program_multiprocessing) runs on the Raspberry Pi and brings the system to life.
+**Code:** [Python code](code/clock_program_multiprocessing.py) runs on the Raspberry Pi and brings the system to life.
 
 The code should be simple: two processes are running at the same time.
 1. Runs the camera
@@ -135,7 +135,7 @@ wiringpi.pwmWrite(18, 0)
 time.sleep(0.86)
 ```
 
-Finally, the clock must recover the time it 'loses' while people are looking at it. For this, the number of seconds lost is stored in `n_lost`. Before the clock moves 1 step per second when `number_faces == 0`, it moves full speed counterclockwise for the time necessary to recover the distance lost in the `n_lost` time and the distance lost during the recovering time. I got the values by solving a system of equations. 
+Finally, the clock must recover the time it 'loses' while people are looking at it. For this, the number of seconds lost is stored in `n_lost`. Before the clock moves 1 step per second when `number_faces == 0`, it moves full speed counterclockwise for the time necessary to recover the distance lost in the `n_lost` time and the distance lost during the recovering time. I got the values by solving a system of equations.
 
 ```Python
 #move servo counterclockwise fast to recover seconds lost
